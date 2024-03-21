@@ -30,8 +30,10 @@ o	Subnet : 255.255.255.0
 o	Gateway : 192.168.1.1 (Gunakan app.diagrams.net untuk membuat diagramnya, Referensi gambar sudah disertakan)
 ![alt text](https://github.com/aanalff/Task-Photo/blob/main/Simulasi%20jaringan.jpeg?raw=true)
 
-
-
+4.	Buat step-by-step untuk menginstall Virutal Machine via VMware, Virtualbox atau VM pilihan kalian!
+![alt text](?raw=true)
+- Buka virtual box, lalu
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/1-1.jpeg?raw=true)
 
 
 
