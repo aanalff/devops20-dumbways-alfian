@@ -32,8 +32,12 @@ o	Gateway : 192.168.1.1 (Gunakan app.diagrams.net untuk membuat diagramnya, Refe
 
 4.	Buat step-by-step untuk menginstall Virutal Machine via VMware, Virtualbox atau VM pilihan kalian!
 ![alt text](?raw=true)
-- Buka virtual box, lalu
+- Buka virtual box, lalu klik NEW untuk membuat vm baru.
 ![alt text](https://github.com/aanalff/Task-Photo/blob/main/1-1.jpeg?raw=true)
+- Lalu cari file iso ubuntu dan buka filenya.
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/1-2.jpeg?raw=true)
+- Beri nama vm ubuntu ( UBUNTU DW ) dan pilih skip unattended instalation
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/1-3.jpeg?raw=true)
 
 
 
