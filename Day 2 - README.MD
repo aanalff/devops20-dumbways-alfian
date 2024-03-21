@@ -34,15 +34,24 @@ o	Gateway : 192.168.1.1 (Gunakan app.diagrams.net untuk membuat diagramnya, Refe
 ![alt text](?raw=true)
 - Buka virtual box, lalu klik NEW untuk membuat vm baru.
 ![alt text](https://github.com/aanalff/Task-Photo/blob/main/1-1.jpeg?raw=true)
-- Lalu cari file iso ubuntu dan buka filenya.
+
+- Lalu cari file iso ubuntu dan buka filenya, lalu Next.
 ![alt text](https://github.com/aanalff/Task-Photo/blob/main/1-2.jpeg?raw=true)
-- Beri nama vm ubuntu ( UBUNTU DW ) dan pilih skip unattended instalation
+
+- Beri nama vm ubuntu ( UBUNTU DW ) dan pilih skip unattended instalation, lalu Next.
 ![alt text](https://github.com/aanalff/Task-Photo/blob/main/1-3.jpeg?raw=true)
 
+- Atur Base memory (4 Gb) dan  Prosessors (2 core) (opsional tergantung kebutuhan), lalu Next.
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/1-4.jpeg?raw=true)
 
+- Atur Disk (20 Gb) (sesuai kebutuhan), lalu Next.
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/1-5.jpeg?raw=true)
 
+- Setelah semua selesai cek kembali spesifikasi vm yang ingin dibuat, jika sudah sesuai klik Finish. dan vm ubuntu telah selesai dibuat.
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/1-6.jpeg?raw=true)
 
-
+- Setelah ubuntu berhasil terinstal di vm seting untuk Networknya ganti dari NAT menjadi Bridged Adapter
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/1-7.jpeg?raw=true)
 
 
 
