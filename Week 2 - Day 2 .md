@@ -71,17 +71,16 @@ Kedua alat ini membantu kita untuk melihat bagaimana komputer sedang digunakan d
 
 ## 4. buatlah BASH Script untuk instalasi nginx
 
-Langkah-langkahnya:
+Berikut Langkah-langkahnya:
 
-Skrip dimulai dengan #!/bin/bash, yang menandakan bahwa ini adalah skrip Bash.
-Kemudian, skrip memeriksa apakah pengguna yang menjalankan skrip adalah root atau bukan. Hal ini penting karena penginstalan perangkat lunak biasanya memerlukan izin root.
-Selanjutnya, repositori paket diperbarui dengan menjalankan apt update.
-Nginx diinstal menggunakan apt install -y nginx.
-Layanan Nginx kemudian dijalankan menggunakan systemctl start nginx.
-Terakhir, Nginx diaktifkan untuk memulai secara otomatis saat boot dengan perintah systemctl enable nginx.
-Skrip mencetak pesan yang memberi tahu pengguna bahwa instalasi Nginx telah selesai.
-Simpan skrip di file dengan ekstensi .sh, misalnya install_nginx.sh. Berikan izin eksekusi dengan menjalankan chmod +x install_nginx.sh, dan kemudian jalankan skrip dengan perintah ./install_nginx.sh. Skrip ini akan menjalankan seluruh proses instalasi Nginx secara otomatis.
+1. Skrip dimulai dengan `#!/bin/bash`, yang menandakan bahwa ini adalah skrip Bash.
+2. Kemudian, skrip memeriksa apakah pengguna yang menjalankan skrip adalah root atau bukan. Hal ini penting karena penginstalan perangkat lunak biasanya memerlukan izin root.
+3. Selanjutnya, repositori paket diperbarui dengan menjalankan `apt update`.
+4. Nginx diinstal menggunakan `apt install -y nginx`.
+5. Layanan Nginx kemudian dijalankan menggunakan `systemctl start nginx`.
+6. Terakhir, Nginx diaktifkan untuk memulai secara otomatis saat boot dengan perintah `systemctl enable nginx`.
+7. Skrip mencetak pesan yang memberi tahu pengguna bahwa instalasi Nginx telah selesai.
 
-
+Simpan skrip di file dengan ekstensi `.sh`, misalnya `install_nginx.sh`. Berikan izin eksekusi dengan menjalankan `chmod +x install_nginx.sh`, dan kemudian jalankan skrip dengan perintah `./install_nginx.sh`. Skrip ini akan menjalankan seluruh proses instalasi Nginx secara otomatis.
 
 
