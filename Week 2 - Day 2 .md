@@ -85,6 +85,9 @@ echo untuk membuat file baru beserta isinya dan untuk mengganti isi didalam file
 Tentu, mari kita jelaskan dengan bahasa yang lebih sederhana:
 
 1. **htop**:
+
+![alt text](https://github.com/aanalff/photo-task-w-2/blob/main/htop.jpeg?raw=true)
+
    - **Deskripsi**: `htop` adalah alat untuk melihat apa yang sedang dilakukan oleh komputer Anda. Ini memberikan tampilan yang lebih bagus dan mudah digunakan.
    - **Fitur Utama**:
      - Menampilkan daftar proses dengan warna-warna yang membantu.
@@ -94,6 +97,8 @@ Tentu, mari kita jelaskan dengan bahasa yang lebih sederhana:
    - **Cara Menggunakannya**: Anda hanya perlu menjalankan `htop` di terminal untuk memulainya, dan kemudian Anda bisa melihat apa yang terjadi di komputer Anda.
 
 2. **nmon** (Nigel's Monitor):
+
+![alt text](https://github.com/aanalff/photo-task-w-2/blob/main/nmon.jpeg?raw=true)
    - **Deskripsi**: `nmon` adalah alat untuk melihat bagaimana komputer kita menggunakan sumber daya seperti CPU, memori, dan disk.
    - **Fitur Utama**:
      - Menampilkan informasi tentang CPU, memori, disk, dan jaringan.
@@ -105,6 +110,9 @@ Tentu, mari kita jelaskan dengan bahasa yang lebih sederhana:
 Kedua alat ini membantu kita untuk melihat bagaimana komputer sedang digunakan dan memantau kinerjanya. Ini bisa membantu kita menemukan masalah atau mengetahui apakah komputer sedang bekerja keras atau tidak. Pilihan antara `htop` dan `nmon` tergantung pada preferensi masing-masing dan apa yang kita cari dalam tools pemantauan.
 
 ## 4. buatlah BASH Script untuk instalasi nginx
+
+![alt text](https://github.com/aanalff/photo-task-w-2/blob/main/bash%20script%20nginx.jpeg?raw=true)
+![alt text](https://github.com/aanalff/photo-task-w-2/blob/main/nginx%20installed.jpeg?raw=true)
 
 Berikut Langkah-langkahnya:
 
