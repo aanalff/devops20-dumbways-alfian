@@ -23,5 +23,51 @@ setelah masuk directory hero untuk membuat file menggunakan command **touch nama
 
 ## 2. Penjelasan text manipulation beserta step by step
 
+Manipulasi teks di Ubuntu adalah tentang cara mengubah atau memproses kata-kata dan kalimat dalam file teks menggunakan command yang ada di Ubuntu. Misalnya, bisa mencari kata-kata tertentu, mengganti kata-kata dengan yang lain, atau mengekstrak informasi tertentu dari teks.
+
+Beberapa command yang sering digunakan untuk hal ini adalah:
+
+1. **grep**: Ini berguna untuk mencari kata-kata dalam teks.
+2. **sed**: Digunakan untuk mengubah atau menghapus bagian-bagian tertentu dari teks.
+3. **cat**: Menggabungkan teks dari beberapa file.
+4. **sort**: Digunakan untuk mengurutkan baris ascending atau descending dalam teks.
+5. **echo**: dapat digunakan untuk Menampilkan Pesan di Layar, Menyimpan Pesan dalam Variabel, Menyimpan Pesan ke File, Menambahkan Pesan ke File
+6. **cut**: Untuk memotong bagian-bagian tertentu dari teks.
+7. **uniq**: Ini menghilangkan baris duplikat dari teks.
+8. **tr**: Berguna untuk mengganti atau menghapus karakter dalam teks.
+9. **paste**: Menggabungkan teks dari beberapa file menjadi satu baris.
+10. **join**: Digunakan untuk menggabungkan teks dari dua file berdasarkan kesamaan.
+11. **head** dan **tail**: Menunjukkan sebagian awal atau akhir dari teks.
+12. **awk**: Alat ini membantu Anda memproses dan mengatur teks dalam format yang berbeda.
+13. **wc**: Menghitung jumlah kata atau baris dalam teks.
+14. **fmt**: Untuk memformat teks agar lebih mudah dibaca.
+15. **tee**: Menyalurkan teks ke beberapa file.
+
+Dengan menggunakan command tersebut dan beberapa trik, kita bisa melakukan banyak hal dengan teks di Ubuntu, seperti otomatisasi tugas atau pemrosesan data.
+
+## 3. Penjelasan tool htop atau nmon
+
+Tentu, mari kita jelaskan dengan bahasa yang lebih sederhana:
+
+1. **htop**:
+   - **Deskripsi**: `htop` adalah alat untuk melihat apa yang sedang dilakukan oleh komputer Anda. Ini memberikan tampilan yang lebih bagus dan mudah digunakan.
+   - **Fitur Utama**:
+     - Menampilkan daftar proses dengan warna-warna yang membantu.
+     - Dapat mengurutkan proses berdasarkan hal-hal seperti seberapa banyak CPU yang digunakan.
+     - Menunjukkan grafik untuk melihat seberapa banyak CPU dan memori yang digunakan.
+     - Dapat membantu kita menghentikan proses yang menyebabkan masalah.
+   - **Cara Menggunakannya**: Anda hanya perlu menjalankan `htop` di terminal untuk memulainya, dan kemudian Anda bisa melihat apa yang terjadi di komputer Anda.
+
+2. **nmon** (Nigel's Monitor):
+   - **Deskripsi**: `nmon` adalah alat untuk melihat bagaimana komputer kita menggunakan sumber daya seperti CPU, memori, dan disk.
+   - **Fitur Utama**:
+     - Menampilkan informasi tentang CPU, memori, disk, dan jaringan.
+     - Dapat menampilkan grafik untuk memudahkan kita melihat bagaimana penggunaannya dari waktu ke waktu.
+     - Dapat menyimpan informasi untuk dilihat nanti.
+     - Memiliki tombol-tombol khusus untuk membantu menjelajahi informasi.
+   - **Cara Menggunakannya**: kita hanya perlu menjalankan `nmon` di terminal, dan kemudian kita bisa melihat informasi tentang apa yang sedang dilakukan oleh komputer kita.
+
+Kedua alat ini membantu kita untuk melihat bagaimana komputer sedang digunakan dan memantau kinerjanya. Ini bisa membantu kita menemukan masalah atau mengetahui apakah komputer sedang bekerja keras atau tidak. Pilihan antara `htop` dan `nmon` tergantung pada preferensi masing-masing dan apa yang kita cari dalam tools pemantauan.
+
 
 
