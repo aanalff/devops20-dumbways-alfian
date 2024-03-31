@@ -46,30 +46,39 @@ Beberapa command yang sering digunakan untuk hal ini adalah:
 Dengan menggunakan command tersebut dan beberapa trik, kita bisa melakukan banyak hal dengan teks di Ubuntu, seperti otomatisasi tugas atau pemrosesan data, berikut beberapa contoh penggunaan `grep` `sed` `cat` `sort` `echo`
 
 grep
+
 ![alt text](https://github.com/aanalff/photo-task-w-2/blob/main/grep.jpeg?raw=true)
 
 sed
+
 ![alt text](https://github.com/aanalff/photo-task-w-2/blob/main/sed.jpeg?raw=true)
 
 cat buat dan isi file
+
 ![alt text](https://github.com/aanalff/photo-task-w-2/blob/main/cat%20buat%20dan%20isi%20file.jpeg?raw=true)
 
 cat untuk menggabungkan atau mengganti isi beberapa file ke file lain
+
 ![alt text](https://github.com/aanalff/photo-task-w-2/blob/main/cat%20untuk%20menggabungkan%20atau%20mengganti%20isi%20beberapa%20file%20ke%20file%20lain.jpeg?raw=true)
-![alt text](?raw=true)
+
 sort untuk mengurutkan nomer
+
 ![alt text](https://github.com/aanalff/photo-task-w-2/blob/main/sort%20untuk%20mengurutkan%20nomer.jpeg?raw=true)
 
 echo untuk menampilkan pesan
+
 ![alt text](https://github.com/aanalff/photo-task-w-2/blob/main/echo%20untuk%20menampilkan%20pesan.jpeg?raw=true)
 
 echo untuk menampilkan variabel
+
 ![alt text](https://github.com/aanalff/photo-task-w-2/blob/main/echo%20untuk%20menampilkan%20variabel.jpeg?raw=true)
 
 echo untuk menambahkan text ke file yg sudah ada
+
 ![alt text](https://github.com/aanalff/photo-task-w-2/blob/main/echo%20untuk%20menambahkan%20text%20ke%20file%20yg%20sudah%20ada.jpeg?raw=true)
 
 echo untuk membuat file baru beserta isinya dan untuk mengganti isi didalam file
+
 ![alt text](https://github.com/aanalff/photo-task-w-2/blob/main/echo%20untuk%20membuat%20file%20baru%20beserta%20isinya%20dan%20untuk%20mengganti%20isi%20didalam%20file.jpeg?raw=true)
 ## 3. Penjelasan tool htop atau nmon
 
