@@ -69,5 +69,8 @@ Tentu, mari kita jelaskan dengan bahasa yang lebih sederhana:
 
 Kedua alat ini membantu kita untuk melihat bagaimana komputer sedang digunakan dan memantau kinerjanya. Ini bisa membantu kita menemukan masalah atau mengetahui apakah komputer sedang bekerja keras atau tidak. Pilihan antara `htop` dan `nmon` tergantung pada preferensi masing-masing dan apa yang kita cari dalam tools pemantauan.
 
+## 4. buatlah BASH Script untuk instalasi nginx
+
+
 
 
