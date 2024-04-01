@@ -46,15 +46,19 @@ Beberapa command yang sering digunakan untuk hal ini adalah:
 Dengan menggunakan command tersebut dan beberapa trik, kita bisa melakukan banyak hal dengan teks di Ubuntu, seperti otomatisasi tugas atau pemrosesan data, berikut beberapa contoh penggunaan `grep` `sed` `cat` `sort` `echo`
 
 - grep
+
 grep digunakan untuk mencari kata didalam file
 
 ![alt text](https://github.com/aanalff/photo-task-w-2/blob/main/grep.jpeg?raw=true)
 
 - sed
+
 sed digunakan untuk mengubah atau menghapus bagian-bagian tertentu dari teks.
+
 ![alt text](https://github.com/aanalff/photo-task-w-2/blob/main/sed.jpeg?raw=true)
 
 - cat
+
 cat memiliki beberapa fungsi contohnya:
 
 cat buat dan isi file
@@ -66,7 +70,8 @@ cat untuk menggabungkan atau mengganti isi beberapa file ke file lain
 ![alt text](https://github.com/aanalff/photo-task-w-2/blob/main/cat%20untuk%20menggabungkan%20atau%20mengganti%20isi%20beberapa%20file%20ke%20file%20lain.jpeg?raw=true)
 
 - sort
-sort untuk mengurutkan nomer
+
+sort digunakan untuk mengurutkan baris ascending atau descending dalam teks
 
 ![alt text](https://github.com/aanalff/photo-task-w-2/blob/main/sort%20untuk%20mengurutkan%20nomer.jpeg?raw=true)
 
