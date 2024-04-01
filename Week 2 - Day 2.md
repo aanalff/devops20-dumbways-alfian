@@ -95,7 +95,6 @@ echo untuk membuat file baru beserta isinya dan untuk mengganti isi didalam file
 
 ## 3. Penjelasan tool htop atau nmon
 
-Tentu, mari kita jelaskan dengan bahasa yang lebih sederhana:
 
 1. **htop**:
 
