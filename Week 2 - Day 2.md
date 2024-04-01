@@ -1,4 +1,4 @@
-# TASK
+# TASK Manage Server in Terminal
 - Buat 3 directory yang masing-masing berisi 2 file dan rapihkan sebaik mungkin!
 - Penjelasan text manipulation beserta step by step
 - Penjelasan tool htop atau nmon
@@ -45,13 +45,17 @@ Beberapa command yang sering digunakan untuk hal ini adalah:
 
 Dengan menggunakan command tersebut dan beberapa trik, kita bisa melakukan banyak hal dengan teks di Ubuntu, seperti otomatisasi tugas atau pemrosesan data, berikut beberapa contoh penggunaan `grep` `sed` `cat` `sort` `echo`
 
-grep
+- grep
+grep digunakan untuk mencari kata didalam file
 
 ![alt text](https://github.com/aanalff/photo-task-w-2/blob/main/grep.jpeg?raw=true)
 
-sed
-
+- sed
+sed digunakan untuk mengubah atau menghapus bagian-bagian tertentu dari teks.
 ![alt text](https://github.com/aanalff/photo-task-w-2/blob/main/sed.jpeg?raw=true)
+
+- cat
+cat memiliki beberapa fungsi contohnya:
 
 cat buat dan isi file
 
@@ -61,9 +65,12 @@ cat untuk menggabungkan atau mengganti isi beberapa file ke file lain
 
 ![alt text](https://github.com/aanalff/photo-task-w-2/blob/main/cat%20untuk%20menggabungkan%20atau%20mengganti%20isi%20beberapa%20file%20ke%20file%20lain.jpeg?raw=true)
 
+- sort
 sort untuk mengurutkan nomer
 
 ![alt text](https://github.com/aanalff/photo-task-w-2/blob/main/sort%20untuk%20mengurutkan%20nomer.jpeg?raw=true)
+
+- echo dapat digunakan untuk Menampilkan Pesan di Layar, Menyimpan Pesan dalam Variabel, Menyimpan Pesan ke File, Menambahkan Pesan ke File
 
 echo untuk menampilkan pesan
 
@@ -80,6 +87,7 @@ echo untuk menambahkan text ke file yg sudah ada
 echo untuk membuat file baru beserta isinya dan untuk mengganti isi didalam file
 
 ![alt text](https://github.com/aanalff/photo-task-w-2/blob/main/echo%20untuk%20membuat%20file%20baru%20beserta%20isinya%20dan%20untuk%20mengganti%20isi%20didalam%20file.jpeg?raw=true)
+
 ## 3. Penjelasan tool htop atau nmon
 
 Tentu, mari kita jelaskan dengan bahasa yang lebih sederhana:
