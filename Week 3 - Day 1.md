@@ -151,6 +151,23 @@ Jika sudah jalankan aplikasi dengan menggunakan perintah berikut.
 
 `./index`
 
+## phyton
+
+-Pertama-tama kita harus install terlebih dahulu Pyhton3. Untuk instalasi ikuti beberapa perintah di bawah ini.
+`sudo apt update; sudo apt upgrade`
+
+-Python3 sudah ada secara default, untuk melakukan pengecekan jalankan perintah berikut.
+`python3 -v`
+
+-Sekarang kita install package manager dari python3. Kalian dapat menggunakan perintah berikut ini.
+`sudo apt install python3-pip
+
+-Sekarang kita akan membuat aplikasi sederhana menggunakan Python3
+`nano index.py`
+
+-Jika sudah sekarang jalankan aplikasi dengan menggunakan perintah berikut ini.
+
+`python3 index.py`
 
 
 
