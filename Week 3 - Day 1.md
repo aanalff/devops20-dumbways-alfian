@@ -50,6 +50,7 @@ Untuk mendeploy aplikasi wayshub-frontend (Node.js) di sebuah server Ubuntu, And
      ```bash
      git clone https://github.com/dumbwaysdev/wayshub-frontend
      ```
+
 ![alt text](https://github.com/aanalff/photo-week-3/blob/main/Unduh%20dan%20Persiapkan%20Kode%20Aplikasi.jpeg?raw=true)
 
    - Masuk ke direktori proyek:
@@ -57,6 +58,7 @@ Untuk mendeploy aplikasi wayshub-frontend (Node.js) di sebuah server Ubuntu, And
      ```bash
      cd wayshub-frontend
      ```
+
 ![alt text](https://github.com/aanalff/photo-week-3/blob/main/masuk%20ke%20directory%20project.jpeg?raw=true)
 
    - Install dependensi aplikasi:
@@ -64,18 +66,23 @@ Untuk mendeploy aplikasi wayshub-frontend (Node.js) di sebuah server Ubuntu, And
      ```bash
      npm install
      ```
+
 ![alt text](https://github.com/aanalff/photo-week-3/blob/main/instalasi%20nvm.jpeg?raw=true)
 
 3. **Konfigurasi Aplikasi:**
    - Jika diperlukan, sesuaikan konfigurasi aplikasi seperti port yang akan digunakan atau URL backend jika ada.
+
 ![alt text](https://github.com/aanalff/photo-week-3/blob/main/buat%20konfigurasi%20aplikasi.jpeg?raw=true)
+
 ![alt text](https://github.com/aanalff/photo-week-3/blob/main/buat%20isi%20aplikasi%20contohnya%20%20Alfian%20Dumbways%20talent.jpeg?raw=true)
+
 4. **Menjalankan Aplikasi:**
    - jika sudah selesai konfigurasi aplikasi cek ip dulu agar step selanjutnya berjalan lancar, lalu gunakan node index.js (nama file index.js bisa yg lain) untuk menjalankan apliaksi
 
      ```bash
      npm run start
      ```
+
 ![alt text](https://github.com/aanalff/photo-week-3/blob/main/jika%20sudah%20selesai%20konfigurasi%20aplikasi%20cek%20ip%20dulu%20agar%20step%20selanjutnya%20berjalan%20lancar%2C%20lalu%20gunakan%20node%20index.js%20(nama%20file%20index.js%20bisa%20yg%20lain)%20untuk%20menjalankan%20apliaksi.jpeg?raw=true)
 
    - Aplikasi akan berjalan dan Anda akan dapat mengaksesnya melalui browser di alamat IP server Anda pada port yang telah ditentukan (biasanya port 3000 jika tidak diubah).
@@ -89,22 +96,34 @@ Untuk mendeploy aplikasi wayshub-frontend (Node.js) di sebuah server Ubuntu, And
 Pertama 2 kita butuh instalsi enggine nya terlebih dahulu dengan cara
 
 `wget https://golang.org/dl/go1.16.5.linux-amd64.tar.gz && sudo su`
+
 ![alt text](https://github.com/aanalff/photo-week-3/blob/main/instalasi%20tools%20golang.jpeg?raw=true)
+
 `rm -rf /usr/local/go && tar -C /usr/local -xzf go1.16.5.linux-amd64.tar.gz && exit`
+
 ![alt text](https://github.com/aanalff/photo-week-3/blob/main/instalasi%20golang%20step%202.jpeg?raw=true)
+
 Selanjutnya masukkan path go pada .bashrc
 `sudo nano .bashrc`
+
 ![alt text](https://github.com/aanalff/photo-week-3/blob/main/Selanjutnya%20masukkan%20path%20go%20pada%20.bashrc.jpeg?raw=true)
+
 lalu masukan perintah berikut dipaling bawah
 `export PATH=$PATH:/usr/local/go/bin`
+
 ![alt text](https://github.com/aanalff/photo-week-3/blob/main/Selanjutnya%20perintah%20.bashrc.jpeg?raw=true)
+
 Jika sudah sekarang dapat verifikasi go dengan cara berikut
 `go version`
+
 ![alt text](https://github.com/aanalff/photo-week-3/blob/main/go%20version.jpeg?raw=true)
+
 Sekarang kita akan membuat aplikasi sederhana menggunakan go. Kalian dapat menjalankan beberapa perintah berikut ini.
 
 Buat sebuah file dengan nama `index.go`
+
 ![alt text](https://github.com/aanalff/photo-week-3/blob/main/buat%20file%20go.jpeg?raw=true)
+
 Setelah itu masukkan script dibawah ini.
 
 index.go
@@ -115,19 +134,28 @@ import "fmt"
 func main() {
     fmt.Println("Alfian Dumbways")
 }
+
 ![alt text](https://github.com/aanalff/photo-week-3/blob/main/Buat%20script%20seperti%20ini.jpeg?raw=true)
+
 Sekarang jalankan aplikasi go dengan menggunakan perintah berikut.
 
 `go run index.go`
+
 ![alt text](https://github.com/aanalff/photo-week-3/blob/main/go%20run%20index.go.jpeg?raw=true)
+
 Jika aplikasi kalian ingin di build, maka jalankan perintah berikut ini.
 
 `go build index.go`
+
 ![alt text](https://github.com/aanalff/photo-week-3/blob/main/go%20build%20index.go.jpeg?raw=true)
+
 Jika sudah jalankan aplikasi dengan menggunakan perintah berikut.
 
 `./index`
+
 ![alt text](https://github.com/aanalff/photo-week-3/blob/main/.index.jpeg?raw=true)
+
+
 ### phyton
 
 -Pertama-tama kita harus install terlebih dahulu Pyhton3. Untuk instalasi ikuti beberapa perintah di bawah ini.
@@ -141,13 +169,16 @@ Jika sudah jalankan aplikasi dengan menggunakan perintah berikut.
 
 -Sekarang kita akan membuat aplikasi sederhana menggunakan Python3
 `nano index.py`
+
 ![alt text](https://github.com/aanalff/photo-week-3/blob/main/nano%20index.py.jpeg?raw=true)
 -Jika sudah sekarang jalankan aplikasi dengan menggunakan perintah berikut ini.
 
 `python3 index.py`
+
 ![alt text](https://github.com/aanalff/photo-week-3/blob/main/python3%20index.py.jpeg?raw=true)
 
 Tampilan python3 di web
+
 ![alt text](https://github.com/aanalff/photo-week-3/blob/main/tampilan%20python3.jpeg?raw=true)
 
 
