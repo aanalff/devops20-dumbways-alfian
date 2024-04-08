@@ -14,25 +14,21 @@ Cara Run Aplikasi :
 
 ## 1. Jelaskan apa itu Web server dan gambarkan bagaimana cara webserver bekerja.
 
-Bayangkan sebuah web server seperti seorang pelayan di sebuah restoran. Ketika kita pergi ke restoran dan memesan makanan, pelayan itu bertindak sebagai perantara antara kita (pelanggan) dan dapur (sumber makanan).
+Web server adalah perangkat lunak yang berjalan di sebuah server dan berfungsi untuk melayani permintaan HTTP (Hypertext Transfer Protocol) dari klien, seperti browser web, dengan mengirimkan halaman web dan file-file terkait kepada mereka. Web server juga dapat melakukan berbagai tugas lain terkait dengan pengelolaan situs web, seperti pengaturan konfigurasi, penanganan permintaan, keamanan, dan lainnya.
 
-Dalam hal ini:
-- **Anda** adalah pengguna yang menggunakan browser web.
-- **Pelayan** adalah web server.
-- **Dapur** adalah server di mana situs web atau aplikasi Anda di-host.
+Proses kerja dasar sebuah web server dapat diilustrasikan sebagai berikut:
 
-Prosesnya berjalan seperti ini:
-1. **Pemesanan (Permintaan):** Anda memberi tahu pelayan (web server) apa yang Anda inginkan (misalnya, membuka halaman web tertentu).
-   
-2. **Penyampaian Pesanan (Pemrosesan Permintaan):** Pelayan (web server) menerima pesanan Anda dan memeriksa menu (konten situs web atau aplikasi) untuk memahami apa yang Anda minta.
+1. **Menerima Permintaan**: Ketika klien (seperti browser web) membuat permintaan HTTP, misalnya dengan mengetik URL sebuah situs web, permintaan tersebut dikirim ke server melalui protokol HTTP.
 
-3. **Penyajian (Menyampaikan Respons):** Pelayan (web server) memberi tahu dapur (server) apa yang Anda inginkan, kemudian dapur menyiapkan makanan (halaman web atau konten) yang Anda pesan.
+2. **Mengarahkan Permintaan**: Server menerima permintaan tersebut dan menentukan bagaimana menanggapinya berdasarkan konfigurasi dan file yang tersedia. Ini mungkin berarti menemukan file yang diminta atau menjalankan skrip atau aplikasi tertentu.
 
-4. **Pengantaran Makanan (Mengirimkan Respons):** Setelah makanan (halaman web atau konten) siap, pelayan (web server) membawanya kepada Anda (pengguna) melalui meja Anda (browser web).
+3. **Memproses Permintaan**: Jika permintaan adalah untuk file statis (seperti gambar, HTML, CSS, dll.), server langsung mengirimkan file tersebut ke klien. Jika permintaan memerlukan pemrosesan (misalnya, untuk menjalankan skrip PHP atau mengambil data dari basis data), server akan memproses permintaan tersebut sesuai dengan logika aplikasi.
 
-5. **Penyelesaian Pesanan (Penyelesaian Permintaan):** Setelah Anda menerima makanan (halaman web atau konten), pelayan (web server) menyelesaikan pesanan Anda dan siap untuk melayani pelanggan lain.
+4. **Mengirimkan Respons**: Setelah server selesai memproses permintaan, ia mengirimkan respons HTTP kembali ke klien. Respons ini mungkin berupa halaman web yang diminta, kode status, header, dan file-file terkait lainnya.
 
-Jadi, web server adalah bagian penting dari proses menyajikan konten web kepada pengguna. Ini menerima permintaan dari browser, mengirimkannya ke server yang tepat untuk memproses, dan kemudian mengirimkan respons kembali ke browser sehingga Anda bisa melihat halaman web yang diminta.
+5. **Penanganan Error dan Logging**: Web server juga mengelola kesalahan yang mungkin terjadi selama proses penanganan permintaan dan mencatat aktivitas server ke dalam file log untuk pemantauan dan analisis lebih lanjut.
+
+Proses ini berulang terus menerus saat server menerima permintaan baru dari klien. Web server yang efisien harus mampu menangani banyak permintaan secara bersamaan dengan cepat dan dapat diandalkan.
 
 ## 2. Buatlah Reverse Proxy untuk aplilkasi yang sudah kalian deploy kemarin. (wayshub), untuk domain nya sesuaikan nama masing" ex: alvin.xyz .
 
