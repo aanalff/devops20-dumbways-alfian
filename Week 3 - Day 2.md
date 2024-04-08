@@ -36,40 +36,52 @@ Jadi, web server adalah bagian penting dari proses menyajikan konten web kepada 
 
 ## 2. Buatlah Reverse Proxy untuk aplilkasi yang sudah kalian deploy kemarin. (wayshub), untuk domain nya sesuaikan nama masing" ex: alvin.xyz .
 
-step 1 reverse proxy. masuk file nginx di folder etc ( berisi konfigurasi )
+1. reverse proxy. masuk file nginx di folder etc ( berisi konfigurasi )
+
 ![alt text](https://github.com/aanalff/task-foto-W3/blob/main/step%201%20reverse%20proxy.%20masuk%20file%20nginx%20di%20folder%20etc%20(%20berisi%20konfigurasi%20).jpeg?raw=true)
 
-nginx kepemilikan root, sudo jgn lupa
+2. nginx kepemilikan root, sudo jgn lupa
+
 ![alt text](https://github.com/aanalff/task-foto-W3/blob/main/nginx%20kepemilikan%20root%2C%20sudo%20jgn%20lupa.jpeg?raw=true)
 
-lalu buat directory (apps) dan file konfigurasi ( reverse-proxy.conf)
+3. lalu buat directory (apps) dan file konfigurasi ( reverse-proxy.conf)
+
 ![alt text](https://github.com/aanalff/task-foto-W3/blob/main/lalu%20buat%20directory%20(apps)%20dan%20file%20konfigurasi%20(%20reverse-proxy.conf).jpeg?raw=true)
 
-isi file configurasi, location berarti lokasi domain ( / ) berarti di root proxy pass : diarahkan ke tujuan server kita
+4. isi file configurasi, location berarti lokasi domain ( / ) berarti di root proxy pass : diarahkan ke tujuan server kita
+
 ![alt text](https://github.com/aanalff/task-foto-W3/blob/main/isi%20file%20configurasi.jpeg?raw=true)
 
-lalu tambahkan konfigurasi di file nginx.conf
+5. lalu tambahkan konfigurasi di file nginx.conf
+
 ![alt text](https://github.com/aanalff/task-foto-W3/blob/main/lalu%20tambahkan%20konfigurasi%20di%20file%20nginx.conf.jpeg?raw=true)
 
-lalu tambahkan perintah include /etc/nginx/apps/reverse-proxy.conf
+6. lalu tambahkan perintah include /etc/nginx/apps/reverse-proxy.conf
+
 ![alt text](https://github.com/aanalff/task-foto-W3/blob/main/lalu%20tambahkan%20perintah%20include%20etcnginxappsreverse-proxy.conf.jpeg?raw=true)
 
-lalu cek apakah konfigurasi reverse proxy berhasil dengan sudo nginx -t jika keterangan syntax is ok berarti konfigurasi berhasil
+7. lalu cek apakah konfigurasi reverse proxy berhasil dengan sudo nginx -t jika keterangan syntax is ok berarti konfigurasi berhasil
+
 ![alt text](https://github.com/aanalff/task-foto-W3/blob/main/lalu%20cek%20apakah%20konfigurasi%20reverse%20proxy%20berhasil%20dengan%20sudo%20nginx%20-t%20jika%20keterangan%20syntax%20is%20ok%20berarti%20konfigurasi%20berhasil.jpeg?raw=true)
 
-lalu reload konfigurasi nginx dan cek status apakah ada yg error atau tidak
+8. lalu reload konfigurasi nginx dan cek status apakah ada yg error atau tidak
+
 ![alt text](https://github.com/aanalff/task-foto-W3/blob/main/lalu%20reload%20konfigurasi%20nginx%20dan%20cek%20status%20apakah%20ada%20yg%20error%20atau%20tidak.jpeg?raw=true)
 
-cara membuat domain di ubuntu server dengan menambahkan domain di file tersebut
+9. cara membuat domain di ubuntu server dengan menambahkan domain di file tersebut
+
 ![alt text](https://github.com/aanalff/task-foto-W3/blob/main/cara%20membuat%20domain%20di%20ubuntu%20server%20dengan%20menambahkan%20domain%20di%20file%20tersebut.jpeg?raw=true)
 
-lalu masukan ip server kita dan domain yg tadi kita buat
+10. lalu masukan ip server kita dan domain yg tadi kita buat
+
 ![alt text](https://github.com/aanalff/task-foto-W3/blob/main/lalu%20masukan%20ip%20server%20kita%20dan%20domain%20yg%20tadi%20kita%20buat.jpeg?raw=true)
 
-membuat host domain ( windows )
+11. membuat host domain ( windows )
+
 ![alt text](https://github.com/aanalff/task-foto-W3/blob/main/membuat%20host%20domain%20(%20windows%20).jpeg?raw=true)
 
-reverse proxy berhasi dibuat
+12. reverse proxy berhasi dibuat
+
 ![alt text](https://github.com/aanalff/task-foto-W3/blob/main/reverse%20proxy2.jpeg?raw=true)
 
 ## 3. Jelaskan apa itu load balance.
@@ -79,18 +91,23 @@ Load balancing pada server adalah teknik yang digunakan untuk mendistribusikan l
 ## 4. implementasikan loadbalancing kepada aplikasi wayshub yang telah kalian gunakan.
 
 
-konfigurasi load balance domain adalah variable dari ke dua ip
+1. konfigurasi load balance domain adalah variable dari ke dua ip
+
 ![alt text](https://github.com/aanalff/task-foto-W3/blob/main/konfigurasi%20load%20balance%20domain%20adalah%20variable%20dari%20ke%20dua%20ip.jpeg?raw=true)
 
-keadaan kedua server hidup
+2. keadaan kedua server hidup
+
 ![alt text](https://github.com/aanalff/task-foto-W3/blob/main/keadaan%20kedua%20server%20hidup.jpeg?raw=true)
 
-keadaaan 1 server mati (alfian_dw)
+3. keadaaan 1 server mati (alfian_dw)
+
 ![alt text](https://github.com/aanalff/task-foto-W3/blob/main/keadaaan%201%20server%20mati%20(alfian_dw).jpeg?raw=true)
 
-keadaan server ke dua mati (ubuntu1)
+4. keadaan server ke dua mati (ubuntu1)
+
 ![alt text](https://github.com/aanalff/task-foto-W3/blob/main/keadaan%20server%20ke%20dua%20mati%20(ubuntu1).jpeg?raw=true)
 
-keadaan ke dua server mati, menandakan load balance berhasil
+5. keadaan ke dua server mati, menandakan load balance berhasil
+
 ![alt text](https://github.com/aanalff/task-foto-W3/blob/main/keadaan%20ke%20dua%20server%20mati%2C%20menandakan%20load%20balance%20berhasil.jpeg?raw=true)
 
