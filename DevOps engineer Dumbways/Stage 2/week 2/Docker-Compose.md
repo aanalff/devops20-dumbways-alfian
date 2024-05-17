@@ -41,3 +41,82 @@ Repository && Reference:
 - Backend api.team1.studentdumbways.my.id
 - Push image ke docker registry kalian masing".
 Aplikasi dapat berjalan dengan sesuai seperti melakukan login/register.
+
+# Answer
+
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/m1.jpg?raw=true)
+
+
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/m2.jpg?raw=true)
+
+
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/m3.jpg?raw=true)
+
+
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/m4.jpg?raw=true)
+
+
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/m5.jpg?raw=true)
+
+
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/m6.jpg?raw=true)
+
+
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/m7.jpg?raw=true)
+
+
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/m8.jpg?raw=true)
+
+
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/m9.jpg?raw=true)
+
+
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/m10.jpg?raw=true)
+
+
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/m11.jpg?raw=true)
+
+
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/m12.jpg?raw=true)
+
+
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/m13.jpg?raw=true)
+
+
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/m14.jpg?raw=true)
+
+
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/m15.jpg?raw=true)
+
+
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/m16.jpg?raw=true)
+
+
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/m17.jpg?raw=true)
+
+
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/m18.jpg?raw=true)
+
+
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/m19.jpg?raw=true)
+
+
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/m20.jpg?raw=true)
+
+
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/m21.jpg?raw=true)
+
+
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/m22.jpg?raw=true)
+
+
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/m23.jpg?raw=true)
+
+
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/m24.jpg?raw=true)
+
+
+![alt text](?raw=true)
+
+
+![alt text](?raw=true)
