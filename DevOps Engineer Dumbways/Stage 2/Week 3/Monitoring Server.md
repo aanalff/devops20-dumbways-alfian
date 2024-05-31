@@ -1,0 +1,36 @@
+Description
+Sebelum mengerjakan tugas, mohon persiapkan :
+
+Akun Github dan buat repository dengan judul "devops20-dumbways-<nama kalian>"
+Gunakan file README.md untuk isi tugas kalian
+Buatlah langkah-langkah pengerjaan tugas beserta dokumentasinya
+Docker Images :
+node-exporter
+Prometheus
+Grafana Dashboard
+Cadvisor
+
+Tasks :
+
+Setup node-exporter, prometheus dan Grafana menggunakan docker
+install node-exporter di appserver & gateway
+Reverse Proxy
+bebas ingin menggunakan nginx native / docker
+Domain
+exporter-$name.studentdumbways.my.id (node exporter)
+prom-$name.studentdumbways.my.id (prometheus)
+monitoring-$name.studentdumbways.my.id (grafana)
+SSL Cloufflare on / certbot SSL biasa / wildcard SSL diperbolehkan
+Dengan Grafana, buatlah :
+Dashboard untuk monitor resource server (CPU, RAM & Disk Usage) buatlah se freestyle kalian.
+Buat dokumentasi tentang rumus promql yang kalian gunakan
+Buat alerting dengan Contact Point pilihan kalian (discord, telegram, slack dkk)
+Untuk alert :
+Boleh menggunakan alert manager / alert rule dari grafana
+Ketentuan alerting yang harus dibuat
+CPU Usage over 20%
+RAM Usage over 75%
+Monitoring specific container
+deploy application frontend di app-server
+monitoring frontend container
+untuk alerting bisa di check di server discord yaa, sudah di buatkan channel alerting

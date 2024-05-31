@@ -1,0 +1,40 @@
+Description
+Sebelum mengerjakan tugas, mohon persiapkan :
+
+Akun Github dan buat repository dengan judul "devops20-dumbways-<nama kalian>"
+Gunakan file README.md untuk isi tugas kalian
+Buatlah langkah-langkah pengerjaan tugas beserta dokumentasinya
+=========================================
+Reference
+ansible-installation
+ansible-module
+
+Ansible
+
+[Local]
+Buat konfigurasi Ansible & sebisa mungkin maksimalkan penggunaan ansbile untuk melakukan semua setup dan se freestyle kalian
+
+[ansible]
+Buatlah ansible untuk :
+
+Membuat user baru beserta generate ssh-key nya, lalu test masuk ke user tersebut.
+Instalasi Docker
+Deploy application frontend yang sudah kalian gunakan sebelumnya menggunakan ansible.
+Instalasi Monitoring Server (node exporter, prometheus, grafana)
+Setup reverse-proxy
+Generated SSL certificate
+dan yang paling penting make your own kind ansible script dengan rapi dan jelas. dan sebisa mungkin jangan MENCONTEK milik teman lain karena script akan terlihat sekali perbedaan nya di materi ansible ini.
+agar script terlihat rapi, implementasikan penggunaan variable di script kalian.
+simpan script kalian ke dalam github dengan format tree sebagai berikut:
+  Automation  
+  |  
+  | Terraform
+  └─|  └── main.tf 
+    Ansible
+    ├── ansible.cfg
+    ├── lolrandom1.yaml
+    ├── group_vars
+    │ └── all
+    ├── Inventory
+    ├── lolrandom2.yaml
+    └── lolrandom3.yaml
