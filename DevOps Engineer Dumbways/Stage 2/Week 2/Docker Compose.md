@@ -1,41 +1,178 @@
 1. Docker and Docker Compose
+
 Description
+
 Sebelum mengerjakan tugas, mohon persiapkan :
 
-Akun Github dan buat repository dengan judul "devops20-dumbways-<nama kalian>"
-Gunakan file README.md untuk isi tugas kalian
-Buatlah langkah-langkah pengerjaan tugas beserta dokumentasinya
-Gunakan vm Appserver kalian diskusikan saja ingin menggunakan vm siapa di dalam team
+- Akun Github dan buat repository dengan judul "devops20-dumbways-<nama kalian>"
+- Gunakan file README.md untuk isi tugas kalian
+- Buatlah langkah-langkah pengerjaan tugas beserta dokumentasinya
+- Gunakan vm Appserver kalian diskusikan saja ingin menggunakan vm siapa di dalam team
 
 Repository && Reference:
-Housy Backend
-Housy Frontend
-Certbot
-PM2 Runtime With Docker
-Cloudflare
-Wildcard SSL
+- Housy Backend
+- Housy Frontend
+- Certbot
+- PM2 Runtime With Docker
+- Cloudflare
+- Wildcard SSL
 
-Tasks :
+# Tasks :
 [ Docker ]
 
-Jelasakan langkah-langkah melakukan rebuild server BiznetGio, dan ubah menggunakan os ubuntu 22
-Setelah server sudah selesai ter rebuild, buatlah suatu user baru dengan nama team kalian
-Buatlah bash script se freestyle mungkin untuk melakukan installasi docker.
-Deploy aplikasi Web Server, Frontend, Backend, serta Database on top docker compose
-Buat suatu docker compose yang berisi beberapa service kalian
-Web Server
-Frontend
-Backend
-Database
-Di dalam docker-compose file buat suatu custom network dengan nama team kalian, lalu pasang ke setiap service yang kalian miliki.
-Deploy database terlebih dahulu menggunakan mysql dan jangan lupa untuk pasang volume di bagian database.
-Untuk building image frontend dan backend sebisa mungkin buat dockerized dengan image sekecil mungkin. dan jangan lupa untuk sesuaikan configuration dari backend ke database maupun frontend ke backend sebelum di build menjadi docker images.
-Untuk Web Server buatlah configurasi reverse-proxy menggunakan nginx on top docker.
-SSL CLOUDFLARE OFF!!!
-Gunakan docker volume untuk membuat reverse proxy
-SSL sebisa mungkin gunakan wildcard
-Untuk DNS bisa sesuaikan seperti contoh di bawah ini
-Frontend team1.studentdumbways.my.id
-Backend api.team1.studentdumbways.my.id
-Push image ke docker registry kalian masing".
+- Jelasakan langkah-langkah melakukan rebuild server BiznetGio, dan ubah menggunakan os ubuntu 22
+- Setelah server sudah selesai ter rebuild, buatlah suatu user baru dengan nama team kalian
+- Buatlah bash script se freestyle mungkin untuk melakukan installasi docker.
+- Deploy aplikasi Web Server, Frontend, Backend, serta Database on top docker compose
+- Buat suatu docker compose yang berisi beberapa service kalian
+ Web Server
+ Frontend
+ Backend
+ Database
+- Di dalam docker-compose file buat suatu custom network dengan nama team kalian, lalu pasang ke setiap service yang kalian miliki.
+- Deploy database terlebih dahulu menggunakan mysql dan jangan lupa untuk pasang volume di bagian database.
+- Untuk building image frontend dan backend sebisa mungkin buat dockerized dengan image sekecil mungkin. dan jangan lupa untuk sesuaikan configuration dari backend ke database maupun frontend ke backend sebelum di build menjadi docker images.
+- Untuk Web Server buatlah configurasi reverse-proxy menggunakan nginx on top docker.
+- SSL CLOUDFLARE OFF!!!
+- Gunakan docker volume untuk membuat reverse proxy
+- SSL sebisa mungkin gunakan wildcard
+- Untuk DNS bisa sesuaikan seperti contoh di bawah ini
+- Frontend team1.studentdumbways.my.id
+- Backend api.team1.studentdumbways.my.id
+- Push image ke docker registry kalian masing".
 Aplikasi dapat berjalan dengan sesuai seperti melakukan login/register.
+
+# Answer
+
+buat user baru
+
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/m1.jpg?raw=true)
+
+input ssh pub key
+
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/m2.jpg?raw=true)
+
+- masuk ke team1
+- buat ssh keygen
+
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/m3.jpg?raw=true)
+
+- copy authorized key
+-  chown untuk meribah kepemilikan direcroty dari root ke team1
+-  chmod untuk merubah permision agar bisa di eksekusi oleh team 1
+
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/m4.jpg?raw=true)
+
+-membuat file .sh untuk installasi docker
+- berikut isi filenya
+#!/bin/bash
+
+sudo apt-get update
+
+sudo apt-get install \ ca-certificates \ curl \ gnupg \ lsb-release \ apt-transport-https \ software-properties-common
+
+sudo mkdir -p /etc/apt/keyrings
+
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+sudo apt-get update
+
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+
+docker -v
+
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/m5.jpg?raw=true)
+
+berikut instalsi docker menggunakan sh
+
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/m6.jpg?raw=true)
+
+berikut isi git clone frontend dan backend housy
+
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/m7.jpg?raw=true)
+
+-  pull mysql 5.7
+-  buat compose mysql untuk menjalankan db terlebih dahulu
+- berikut isi file compose mysql
+- setelah itu jalankan docker compose untuk myqsl "docker compose -f docker-compose-mysql.yml up -d"
+
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/m8.jpg?raw=true)
+
+setelah itu kita masuk ke backend dan atur agar terkoneksi dengan data base
+
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/m9.jpg?raw=true)
+
+- setelah itu kita buat dockerfile agar directory bisa dibuild menjadi images, dan isinya seperti berikut
+- lalu jalankan perintah "docker build -t backendteam1 ." maka akan membuat image dengan nama backendteam1
+
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/m10.jpg?raw=true)
+
+FRONTEND
+masuk ke directory frontend lalu atur url backendnya agar terhubung
+
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/m11.jpg?raw=true)
+
+lalu buat docker file seperti berikut. 
+setelah itu jalankan "docker build -t frontend ." untuk membuat images bernama frontend
+
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/m12.jpg?raw=true)
+
+sekarang intsall nginx untuk server dan reverse proxynya
+
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/m13.jpg?raw=true)
+
+sekarang kita buat dns record dicloudflare
+
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/m14.jpg?raw=true)
+
+sekarang kita buat file .secret untuk instalasi cloudflare wildcard ssl
+
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/m15.jpg?raw=true)
+
+root@server-app:~/.secrets# sudo certbot certonly --dns-cloudflare --dns-cloudflare-credentials /root/.secrets/cloudflare.ini -d team1.studentdumbways.my.id,*.team1.studentdumbways.my.id --preferred-challenges dns-01
+
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/m16.jpg?raw=true)
+
+setelah itu copy certificate dan key ke file cert yang nanti akan kita buat
+
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/m17.jpg?raw=true)
+
+setelah itu kita perlu membuat directory nginx 
+- didalam nginx kita buat lagi directory baru untuk certs untuk certificate dan default.conf untuk setiangan reverse proxy setelah itu lakukan copy file certs dengan cara:
+- sudo cp /etc/letsencrypt/live/team1.studentdumbways.my.id/privkey.pem /home/team1/nginx/certs/
+- sudo cp /etc/letsencrypt/live/team1.studentdumbways.my.id/fullchain.pem /home/team1/nginx/certs/
+
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/m18.jpg?raw=true)
+
+lalu buat file docker-compos.yml dan buat seprti berikut
+
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/m19.jpg?raw=true)
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/m20.jpg?raw=true)
+
+lalu jalankan "docker compose up -d" untuk mejalankan docker compose, setelah itu kita cek apakah aplikasi dusah berjalan dengan benar
+
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/m21.jpg?raw=true)
+
+berikut adalah contoh web berhasil kita jalankan diatas docker
+
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/m22.jpg?raw=true)
+
+berikut contoh certificate ssl yang tadi kita buat
+
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/m23.jpg?raw=true)
+
+berikut tampilan aplikasi be
+
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/m24.jpg?raw=true)
+
+sekarang kita push image ke docker hub dengan cara seperti berikut
+
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/m25.jpeg?raw=true)
+
+berikut adalah image yang berhasil kita push
+
+![alt text](https://github.com/aanalff/Task-Photo/blob/main/m26.jpeg?raw=true)
