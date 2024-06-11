@@ -1,1 +1,25 @@
-soon
+Description
+Sebelum mengerjakan tugas, mohon persiapkan :
+
+Akun Github dan buat repository dengan judul "devops19-dumbways-<nama kalian>"
+Gunakan file README.md untuk isi tugas kalian
+Buatlah langkah-langkah pengerjaan tugas beserta dokumentasinya
+Repository && Reference:
+Ingress-Nginx
+https://docs.nginx.com/nginx-ingress-controller/
+k3s docs
+https://docs.k3s.io/
+Alvin Docs
+https://github.com/RizqyAlvindra/kubernetes/tree/master/k3s
+Kubernetes Docs
+https://kubernetes.io/docs/home/
+mongodb
+https://hub.docker.com/_/mongo
+
+Kubernetes Tasks
+
+1. Buatlah sebuah cluster menggunakan k3s yang berisikan 2 node as a master and worker.
+2. Install ingress nginx using helm or manifest
+3. Deploy frontend, Backend kalian ke kubernetes. (bebas menggunakan apps apa)
+4. Setup persistent volume on k3s config
+5. Deploy database mysql with statefullset and use secrets

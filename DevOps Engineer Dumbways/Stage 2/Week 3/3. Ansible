@@ -1,13 +1,15 @@
 Description
 Sebelum mengerjakan tugas, mohon persiapkan :
 
-Akun Github dan buat repository dengan judul "devops20-dumbways-<nama kalian>"
-Gunakan file README.md untuk isi tugas kalian
-Buatlah langkah-langkah pengerjaan tugas beserta dokumentasinya
+- Akun Github dan buat repository dengan judul "devops20-dumbways-<nama kalian>"
+- Gunakan file README.md untuk isi tugas kalian
+- Buatlah langkah-langkah pengerjaan tugas beserta dokumentasinya
 =========================================
 Reference
 ansible-installation
+https://docs.ansible.com/ansible/latest/installation_guide/installation_distros.html
 ansible-module
+https://docs.ansible.com/ansible/2.9/modules/list_of_all_modules.html
 
 Ansible
 
@@ -17,15 +19,15 @@ Buat konfigurasi Ansible & sebisa mungkin maksimalkan penggunaan ansbile untuk m
 [ansible]
 Buatlah ansible untuk :
 
-Membuat user baru beserta generate ssh-key nya, lalu test masuk ke user tersebut.
-Instalasi Docker
-Deploy application frontend yang sudah kalian gunakan sebelumnya menggunakan ansible.
-Instalasi Monitoring Server (node exporter, prometheus, grafana)
-Setup reverse-proxy
-Generated SSL certificate
-dan yang paling penting make your own kind ansible script dengan rapi dan jelas. dan sebisa mungkin jangan MENCONTEK milik teman lain karena script akan terlihat sekali perbedaan nya di materi ansible ini.
-agar script terlihat rapi, implementasikan penggunaan variable di script kalian.
-simpan script kalian ke dalam github dengan format tree sebagai berikut:
+- Membuat user baru beserta generate ssh-key nya, lalu test masuk ke user tersebut.
+- Instalasi Docker
+- Deploy application frontend yang sudah kalian gunakan sebelumnya menggunakan ansible.
+- Instalasi Monitoring Server (node exporter, prometheus, grafana)
+- Setup reverse-proxy
+- Generated SSL certificate
+- dan yang paling penting make your own kind ansible script dengan rapi dan jelas. dan sebisa mungkin jangan MENCONTEK milik teman lain karena script akan terlihat sekali perbedaan nya di materi ansible ini.
+- agar script terlihat rapi, implementasikan penggunaan variable di script kalian.
+- simpan script kalian ke dalam github dengan format tree sebagai berikut:
   Automation  
   |  
   | Terraform
